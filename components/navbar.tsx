@@ -1,4 +1,5 @@
 import Link from "next/link"
+import ToggleThemeSwitcher from "./toggle.switcher"
 
 const Navbar = () => {
   return (
@@ -11,8 +12,11 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <div>
-                <li className="">contact</li>
-                <li className="group">about me</li>
+                <li className="space-y-2">
+                    <Link href={"/about"}>
+                    about me
+                    </Link>
+                    </li>
                 </div>
             </ul>
         </nav>
